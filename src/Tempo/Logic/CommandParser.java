@@ -514,7 +514,7 @@ public class CommandParser {
 				}
 
 				if (timeString.contains(TIME_DELIMETER)) {
-					System.out.println(timeString);
+					//System.out.println(timeString);
 					if (!validateTime(timeString)) {
 						return null;
 					}
@@ -538,7 +538,7 @@ public class CommandParser {
 				}
 
 				String combinedDateTimeString = dateString + DATE_DELIMETER + timeString;
-				System.out.println(combinedDateTimeString);
+				//System.out.println(combinedDateTimeString);
 				SimpleDateFormat dateTimeFormat = new SimpleDateFormat(DATETIME_FORMAT);
 
 				Date parsedDate = dateTimeFormat.parse(combinedDateTimeString);
